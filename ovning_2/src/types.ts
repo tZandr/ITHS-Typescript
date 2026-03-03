@@ -1,7 +1,7 @@
 export type Category = "electronics" | "food" | "clothing";
 export type Price = number | string;
 
-export interface Description {
+export interface Product {
   id: number;
   name: string;
   price: Price;
