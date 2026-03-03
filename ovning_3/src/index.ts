@@ -8,3 +8,12 @@ let returnNumber = (res: number) => {
 
 returnNumber(1);
 returnString("Yeah!!");
+
+// Solve it with Generics
+let returnT = <T>(res: T) => {
+  console.log(res);
+};
+
+returnT("String");
+returnT(2);
+returnT({ id: 2, name: "Zandr" });
