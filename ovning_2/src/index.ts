@@ -38,4 +38,12 @@ const items: Product[] = [
   },
 ];
 
-console.log(items);
+// console.log(items);
+
+const productFailure: Product = {
+  id: 1,
+  name: "Laptop",
+  price: 12999,
+  category: "Gaming", // Error explains what's wrong before running code
+  inStock: true,
+};
