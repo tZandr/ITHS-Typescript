@@ -56,5 +56,21 @@ console.log("Omit:", omitted);
 // Partial(Gör alla fält optional)
 type update = Partial<Product>;
 
+const updated: update[] = [
+  {
+    id: 1,
+    name: "Optional Quest Item",
+    description: "Does nothing.",
+  },
+];
+
+console.log("Partial: ", updated);
+
 // Readonly
 type readonly = Readonly<Product>;
+
+const readList: readonly[] = [ // Refuses
+  {
+    id: 1,
+  }
+]
